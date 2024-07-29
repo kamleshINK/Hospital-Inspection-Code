@@ -9,13 +9,30 @@
 /* Begin PBXBuildFile section */
 		1319AD372C50068B0081EB8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD362C50068B0081EB8E /* AppDelegate.swift */; };
 		1319AD392C50068B0081EB8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD382C50068B0081EB8E /* SceneDelegate.swift */; };
-		1319AD3B2C50068B0081EB8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD3A2C50068B0081EB8E /* ViewController.swift */; };
 		1319AD3E2C50068B0081EB8E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1319AD3D2C50068B0081EB8E /* Base */; };
 		1319AD402C50068B0081EB8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1319AD3F2C50068B0081EB8E /* Assets.xcassets */; };
 		1319AD432C50068B0081EB8E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1319AD422C50068B0081EB8E /* Base */; };
 		1319AD4E2C50068B0081EB8E /* Hospital_InspectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD4D2C50068B0081EB8E /* Hospital_InspectionTests.swift */; };
 		1319AD582C50068B0081EB8E /* Hospital_InspectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD572C50068B0081EB8E /* Hospital_InspectionUITests.swift */; };
 		1319AD5A2C50068B0081EB8E /* Hospital_InspectionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319AD592C50068B0081EB8E /* Hospital_InspectionUITestsLaunchTests.swift */; };
+		135889DA2C54B33E0023D640 /* AuthenticationAPIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135889D92C54B33E0023D640 /* AuthenticationAPIServiceManager.swift */; };
+		135889DF2C54B6570023D640 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135889DE2C54B6570023D640 /* APIEndpoints.swift */; };
+		135889EA2C55454A0023D640 /* InspectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 135889E92C55454A0023D640 /* InspectionViewController.xib */; };
+		135889EB2C55454A0023D640 /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135889E82C55454A0023D640 /* InspectionViewController.swift */; };
+		135889EE2C5552290023D640 /* InspectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135889ED2C5552290023D640 /* InspectionModel.swift */; };
+		135889F12C5555750023D640 /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135889F02C5555750023D640 /* InspectionViewModel.swift */; };
+		135889F32C5557660023D640 /* inspection.json in Resources */ = {isa = PBXBuildFile; fileRef = 135889F22C5557660023D640 /* inspection.json */; };
+		135A7CC82C56B571001B26E5 /* InspectionAPIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A7CC72C56B571001B26E5 /* InspectionAPIServiceManager.swift */; };
+		135A7CCA2C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135A7CC92C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift */; };
+		13D948C62C536FB2003AA117 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D948C52C536FB2003AA117 /* UITextField+Extension.swift */; };
+		13D948CB2C53E07B003AA117 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D948CA2C53E07B003AA117 /* AuthenticationModel.swift */; };
+		13D948CE2C53E285003AA117 /* AuthenticationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13D948CD2C53E285003AA117 /* AuthenticationVM.swift */; };
+		13E91E782C5649BF002FF74C /* SurveyQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E91E762C5649BF002FF74C /* SurveyQuestionTableViewCell.swift */; };
+		13E91E792C5649BF002FF74C /* SurveyQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E91E772C5649BF002FF74C /* SurveyQuestionTableViewCell.xib */; };
+		13E91E7D2C565339002FF74C /* SurveyAnswerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E91E7B2C565339002FF74C /* SurveyAnswerTableViewCell.swift */; };
+		13E91E7E2C565339002FF74C /* SurveyAnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E91E7C2C565339002FF74C /* SurveyAnswerTableViewCell.xib */; };
+		13F622FF2C523AF000CC5928 /* AuthenticateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F622FE2C523AF000CC5928 /* AuthenticateVC.xib */; };
+		13F623002C523AF000CC5928 /* AuthenticateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F622FD2C523AF000CC5928 /* AuthenticateVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +56,6 @@
 		1319AD332C50068B0081EB8E /* Hospital Inspection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hospital Inspection.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1319AD362C50068B0081EB8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1319AD382C50068B0081EB8E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1319AD3A2C50068B0081EB8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1319AD3D2C50068B0081EB8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1319AD3F2C50068B0081EB8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1319AD422C50068B0081EB8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +65,24 @@
 		1319AD532C50068B0081EB8E /* Hospital InspectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hospital InspectionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1319AD572C50068B0081EB8E /* Hospital_InspectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital_InspectionUITests.swift; sourceTree = "<group>"; };
 		1319AD592C50068B0081EB8E /* Hospital_InspectionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital_InspectionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		135889D92C54B33E0023D640 /* AuthenticationAPIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAPIServiceManager.swift; sourceTree = "<group>"; };
+		135889DE2C54B6570023D640 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		135889E82C55454A0023D640 /* InspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
+		135889E92C55454A0023D640 /* InspectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectionViewController.xib; sourceTree = "<group>"; };
+		135889ED2C5552290023D640 /* InspectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionModel.swift; sourceTree = "<group>"; };
+		135889F02C5555750023D640 /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
+		135889F22C5557660023D640 /* inspection.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = inspection.json; sourceTree = "<group>"; };
+		135A7CC72C56B571001B26E5 /* InspectionAPIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionAPIServiceManager.swift; sourceTree = "<group>"; };
+		135A7CC92C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationApiServiceManagerTests.swift; sourceTree = "<group>"; };
+		13D948C52C536FB2003AA117 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		13D948CA2C53E07B003AA117 /* AuthenticationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		13D948CD2C53E285003AA117 /* AuthenticationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationVM.swift; sourceTree = "<group>"; };
+		13E91E762C5649BF002FF74C /* SurveyQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		13E91E772C5649BF002FF74C /* SurveyQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyQuestionTableViewCell.xib; sourceTree = "<group>"; };
+		13E91E7B2C565339002FF74C /* SurveyAnswerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyAnswerTableViewCell.swift; sourceTree = "<group>"; };
+		13E91E7C2C565339002FF74C /* SurveyAnswerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyAnswerTableViewCell.xib; sourceTree = "<group>"; };
+		13F622FD2C523AF000CC5928 /* AuthenticateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateVC.swift; sourceTree = "<group>"; };
+		13F622FE2C523AF000CC5928 /* AuthenticateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticateVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +133,14 @@
 		1319AD352C50068B0081EB8E /* Hospital Inspection */ = {
 			isa = PBXGroup;
 			children = (
+				135889F22C5557660023D640 /* inspection.json */,
+				135889DB2C54B5D80023D640 /* API Endpoints */,
+				135889D82C54B3070023D640 /* Api Service Manager */,
+				13D948C42C536F5E003AA117 /* Extensions */,
+				13F622FC2C5239A700CC5928 /* Authenticate Screen */,
+				135889E32C54F53B0023D640 /* InspectionScreen */,
 				1319AD362C50068B0081EB8E /* AppDelegate.swift */,
 				1319AD382C50068B0081EB8E /* SceneDelegate.swift */,
-				1319AD3A2C50068B0081EB8E /* ViewController.swift */,
 				1319AD3C2C50068B0081EB8E /* Main.storyboard */,
 				1319AD3F2C50068B0081EB8E /* Assets.xcassets */,
 				1319AD412C50068B0081EB8E /* LaunchScreen.storyboard */,
@@ -114,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				1319AD4D2C50068B0081EB8E /* Hospital_InspectionTests.swift */,
+				135A7CC92C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift */,
 			);
 			path = "Hospital InspectionTests";
 			sourceTree = "<group>";
@@ -125,6 +165,105 @@
 				1319AD592C50068B0081EB8E /* Hospital_InspectionUITestsLaunchTests.swift */,
 			);
 			path = "Hospital InspectionUITests";
+			sourceTree = "<group>";
+		};
+		135889D82C54B3070023D640 /* Api Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+				135889D92C54B33E0023D640 /* AuthenticationAPIServiceManager.swift */,
+				135A7CC72C56B571001B26E5 /* InspectionAPIServiceManager.swift */,
+			);
+			path = "Api Service Manager";
+			sourceTree = "<group>";
+		};
+		135889DB2C54B5D80023D640 /* API Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				135889DE2C54B6570023D640 /* APIEndpoints.swift */,
+			);
+			path = "API Endpoints";
+			sourceTree = "<group>";
+		};
+		135889E32C54F53B0023D640 /* InspectionScreen */ = {
+			isa = PBXGroup;
+			children = (
+				13E91E7A2C565314002FF74C /* SurveyAnswerTableViewCell */,
+				13E91E752C56498B002FF74C /* SurveyQuestionTableViewCell */,
+				135889EF2C55555F0023D640 /* InspectionViewModel */,
+				135889EC2C55520A0023D640 /* Inspection Model */,
+				135889E82C55454A0023D640 /* InspectionViewController.swift */,
+				135889E92C55454A0023D640 /* InspectionViewController.xib */,
+			);
+			path = InspectionScreen;
+			sourceTree = "<group>";
+		};
+		135889EC2C55520A0023D640 /* Inspection Model */ = {
+			isa = PBXGroup;
+			children = (
+				135889ED2C5552290023D640 /* InspectionModel.swift */,
+			);
+			path = "Inspection Model";
+			sourceTree = "<group>";
+		};
+		135889EF2C55555F0023D640 /* InspectionViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				135889F02C5555750023D640 /* InspectionViewModel.swift */,
+			);
+			path = InspectionViewModel;
+			sourceTree = "<group>";
+		};
+		13D948C42C536F5E003AA117 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13D948C52C536FB2003AA117 /* UITextField+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13D948C92C53E063003AA117 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13D948CA2C53E07B003AA117 /* AuthenticationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		13D948CC2C53E266003AA117 /* AuthenticationVM */ = {
+			isa = PBXGroup;
+			children = (
+				13D948CD2C53E285003AA117 /* AuthenticationVM.swift */,
+			);
+			path = AuthenticationVM;
+			sourceTree = "<group>";
+		};
+		13E91E752C56498B002FF74C /* SurveyQuestionTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				13E91E762C5649BF002FF74C /* SurveyQuestionTableViewCell.swift */,
+				13E91E772C5649BF002FF74C /* SurveyQuestionTableViewCell.xib */,
+			);
+			path = SurveyQuestionTableViewCell;
+			sourceTree = "<group>";
+		};
+		13E91E7A2C565314002FF74C /* SurveyAnswerTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				13E91E7B2C565339002FF74C /* SurveyAnswerTableViewCell.swift */,
+				13E91E7C2C565339002FF74C /* SurveyAnswerTableViewCell.xib */,
+			);
+			path = SurveyAnswerTableViewCell;
+			sourceTree = "<group>";
+		};
+		13F622FC2C5239A700CC5928 /* Authenticate Screen */ = {
+			isa = PBXGroup;
+			children = (
+				13D948CC2C53E266003AA117 /* AuthenticationVM */,
+				13D948C92C53E063003AA117 /* Model */,
+				13F622FD2C523AF000CC5928 /* AuthenticateVC.swift */,
+				13F622FE2C523AF000CC5928 /* AuthenticateVC.xib */,
+			);
+			path = "Authenticate Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +370,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13E91E792C5649BF002FF74C /* SurveyQuestionTableViewCell.xib in Resources */,
+				135889EA2C55454A0023D640 /* InspectionViewController.xib in Resources */,
 				1319AD402C50068B0081EB8E /* Assets.xcassets in Resources */,
 				1319AD432C50068B0081EB8E /* Base in Resources */,
+				135889F32C5557660023D640 /* inspection.json in Resources */,
 				1319AD3E2C50068B0081EB8E /* Base in Resources */,
+				13F622FF2C523AF000CC5928 /* AuthenticateVC.xib in Resources */,
+				13E91E7E2C565339002FF74C /* SurveyAnswerTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +402,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1319AD3B2C50068B0081EB8E /* ViewController.swift in Sources */,
 				1319AD372C50068B0081EB8E /* AppDelegate.swift in Sources */,
+				13D948C62C536FB2003AA117 /* UITextField+Extension.swift in Sources */,
 				1319AD392C50068B0081EB8E /* SceneDelegate.swift in Sources */,
+				135889EB2C55454A0023D640 /* InspectionViewController.swift in Sources */,
+				135889DF2C54B6570023D640 /* APIEndpoints.swift in Sources */,
+				13D948CE2C53E285003AA117 /* AuthenticationVM.swift in Sources */,
+				135889DA2C54B33E0023D640 /* AuthenticationAPIServiceManager.swift in Sources */,
+				13E91E782C5649BF002FF74C /* SurveyQuestionTableViewCell.swift in Sources */,
+				135889EE2C5552290023D640 /* InspectionModel.swift in Sources */,
+				13D948CB2C53E07B003AA117 /* AuthenticationModel.swift in Sources */,
+				13E91E7D2C565339002FF74C /* SurveyAnswerTableViewCell.swift in Sources */,
+				135889F12C5555750023D640 /* InspectionViewModel.swift in Sources */,
+				135A7CC82C56B571001B26E5 /* InspectionAPIServiceManager.swift in Sources */,
+				13F623002C523AF000CC5928 /* AuthenticateVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135A7CCA2C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift in Sources */,
 				1319AD4E2C50068B0081EB8E /* Hospital_InspectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
