@@ -39,7 +39,10 @@ class InspectionViewModel {
             guard let wSelf = self else { return }
             switch result {
             case .success:
+                let scoreMessage = wSelf.getInspectionScore(inspectionData: inspectionData)
+                wSelf.updateDelegate?.showAlert(message: scoreMessage)
                 wSelf.inspectionData = nil
+                wSelf.updateDelegate?.reloadTableView()
             case .failure(let error as NSError):
                 var message: String
                 switch error.code {
@@ -76,6 +79,19 @@ class InspectionViewModel {
         surveyCategories.forEach { category in
             formFieldData.append(.survey(category))
         }
+    }
+    
+    func getInspectionScore(inspectionData: InspectionData) -> String {
+        var score: Float = .zero
+        guard let categories = inspectionData.inspection?.survey?.categories else { return "Inspection Score: \(score)" }
+        categories.forEach { category in
+            category.questions?.forEach({ question in
+                let ansScore = question.answerChoices?.first(where: {$0.id == question.selectedAnswerChoiceId})?.score
+                score += ansScore ?? .zero
+            })
+        }
+        
+        return "Inspection Score: \(score)"
     }
     
 }

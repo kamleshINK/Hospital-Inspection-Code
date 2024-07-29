@@ -33,6 +33,7 @@
 		13E91E7E2C565339002FF74C /* SurveyAnswerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13E91E7C2C565339002FF74C /* SurveyAnswerTableViewCell.xib */; };
 		13F622FF2C523AF000CC5928 /* AuthenticateVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13F622FE2C523AF000CC5928 /* AuthenticateVC.xib */; };
 		13F623002C523AF000CC5928 /* AuthenticateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F622FD2C523AF000CC5928 /* AuthenticateVC.swift */; };
+		13F6FBEF2C577B0200C541F5 /* InspectionApiServiceManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F6FBEE2C577B0200C541F5 /* InspectionApiServiceManagerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		13E91E7C2C565339002FF74C /* SurveyAnswerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SurveyAnswerTableViewCell.xib; sourceTree = "<group>"; };
 		13F622FD2C523AF000CC5928 /* AuthenticateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateVC.swift; sourceTree = "<group>"; };
 		13F622FE2C523AF000CC5928 /* AuthenticateVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticateVC.xib; sourceTree = "<group>"; };
+		13F6FBEE2C577B0200C541F5 /* InspectionApiServiceManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionApiServiceManagerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				1319AD4D2C50068B0081EB8E /* Hospital_InspectionTests.swift */,
 				135A7CC92C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift */,
+				13F6FBEE2C577B0200C541F5 /* InspectionApiServiceManagerTests.swift */,
 			);
 			path = "Hospital InspectionTests";
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				135A7CCA2C56C098001B26E5 /* AuthenticationApiServiceManagerTests.swift in Sources */,
+				13F6FBEF2C577B0200C541F5 /* InspectionApiServiceManagerTests.swift in Sources */,
 				1319AD4E2C50068B0081EB8E /* Hospital_InspectionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

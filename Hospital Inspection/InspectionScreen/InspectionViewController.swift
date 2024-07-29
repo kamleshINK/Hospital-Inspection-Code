@@ -20,9 +20,8 @@ class InspectionViewController: UIViewController {
         super.viewDidLoad()
         submitButton.layer.cornerRadius = 24
         inspectionViewModel.updateDelegate = self
-        inspectionViewModel.getAndAddInspectionDataFromLocalJsonFile()
         setupTableView()
-        tableView.reloadData()
+        inspectionViewModel.startInspection()
     }
     
     //MARK: - Button Actions
