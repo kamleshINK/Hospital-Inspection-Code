@@ -34,6 +34,7 @@ class SurveyQuestionTableViewCell: UITableViewCell {
         questionTxt.text = question.name
         guard let answerChoices = question.answerChoices else { return }
         tableViewHeightConstraint.constant = CGFloat(30 * answerChoices.count)
+        questionTblView.reloadData()
     }
     
 }

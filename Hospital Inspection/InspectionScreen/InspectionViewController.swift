@@ -85,33 +85,27 @@ extension InspectionViewController: UITableViewDelegate, UITableViewDataSource {
             return UITableView.automaticDimension
         }
     }
-    
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard section < inspectionViewModel.formFieldData.count else { return "" }
+        
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard section < inspectionViewModel.formFieldData.count else { return UIView() }
         switch inspectionViewModel.formFieldData[section] {
         case .inspectionType, .area:
-            return ""
+            return UILabel()
         case .survey(let category):
-            return "Survey: \(category.name ?? "")"
+            return getSectionHeaderView(name: category.name ?? "")
         }
     }
     
-    func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
-        guard section < inspectionViewModel.formFieldData.count else { return }
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        guard section < inspectionViewModel.formFieldData.count else { return .zero }
         switch inspectionViewModel.formFieldData[section] {
         case .inspectionType, .area:
-            return
+            return .zero
         case .survey:
-            if let headerView = view as? UITableViewHeaderFooterView {
-                headerView.contentView.backgroundColor = .clear
-                headerView.backgroundView?.backgroundColor = .clear
-                headerView.textLabel?.font = .systemFont(ofSize: 18, weight: .bold)
-                headerView.textLabel?.textColor = .white
-            }
+            return 24
         }
-   }
-    
-    
+    }
+        
     func getCellWithTitle(title: String, tableView: UITableView, indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "defaultCell", for: indexPath) as UITableViewCell
         cell.textLabel?.text = title
@@ -119,6 +113,24 @@ extension InspectionViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.font = .systemFont(ofSize: 18, weight: .bold)
         cell.backgroundColor = .clear
         return cell
+    }
+    
+    func getSectionHeaderView(name: String) -> UIView {
+        let view = UIView(frame: CGRect(x: .zero, y: .zero, width: tableView.frame.width, height: 24))
+        view.backgroundColor = .clear
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(label)
+        label.text = "Survey: \(name)"
+        label.backgroundColor = UIColor.clear
+        label.textColor = UIColor.white
+        label.font = .systemFont(ofSize: 18, weight: .bold)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
+        label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
+        label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: .zero).isActive = true
+        label.heightAnchor.constraint(equalToConstant: 24).isActive = true
+        return view
     }
     
 }
